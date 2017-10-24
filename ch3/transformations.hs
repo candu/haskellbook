@@ -1,6 +1,8 @@
 -- transformations.hs
 module Transformations where
 
+import Data.List
+
 exclaim :: String -> String
 exclaim s = s ++ "!"
 
@@ -24,3 +26,6 @@ splitOn x xs = let (prefix, suffix) = span (x /=) xs
 
 lastWord :: String -> String
 lastWord s = last (splitOn ' ' s)
+
+rvrs :: String -> String
+rvrs s = intercalate " " (reverse (splitOn ' ' s))
