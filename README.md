@@ -1,0 +1,2 @@
+# haskellbook
+Exercises from Haskellbook.
