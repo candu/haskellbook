@@ -85,9 +85,6 @@ mostExpensiveLetter s =
   in
   snd . head . (List.sortBy (flip compare)) $ groupedTaps
 
-mostPopularLetter :: String -> Char
-
-
 main :: IO ()
 main = do
   mapM_ (print . mostExpensiveLetter) convo
